@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+  <title>Ram Arjun Varma</title>
+  <link rel="icon" type="image/x-icon" href="/RAV.png">
+  <script type="module" src="JS/main.js"></script>
+  
+</head>
+
+<body class="bg-gray-900">
+  <div id="canvas" class="h-screen w-screen flex items-center justify-center px-4 md:px-48">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 w-full h-full max-w-screen-lg">
+      <div
+        class="w-full h-full md:col-span-2 flex-none bg-cover rounded-t md:rounded-t-none md:rounded-l text-center overflow-hidden"
+        id='avatar-container'>
+        <div id='avatar-loading' class="h-full w-full bg-gray-700 animate-pulse p-24"></div>
+      </div>
+      <div class="md:col-span-2 flex items-center">
+        <div>
+          <div>
+            <h1 class="lg:text-6xl md:text-4xl text-4xl text-white py-2">Hi there!</h1>
+            <h1
+              class="lg:text-8xl md:text-4xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-gradient-to-r hover:from-pink-600 hover:to-purple-400 py-2">
+              I'm Arjun</h1>
+            <p class="text-gray-400 text-xl">I'm a passionate web developer with a keen interest in
+              development
+              and a love for exploring new technologies and innovative solutions. Always eager to learn
+              and
+              grow, I thrive on tackling
+              challenges and staying at the forefront of the ever-evolving digital landscape.</p>
+          </div>
+
+          <div class="pt-8 flex space-x-4">
+            <a href="https://www.linkedin.com/in/ramarjunvarmamudundi?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BvZI6IZ68TuKc3A17Z2IKqw%3D%3D"
+              target="_blank">
+              <i class="fa-brands fa-linkedin text-4xl text-blue-300 transition transform hover:scale-125 hover:text-blue-500"
+                aria-hidden="true" title="linkedin"></i>
+            </a>
+            <a href="https://github.com/Ram-Arjun-Varma?tab=repositories" target="_blank">
+              <i class="fa-brands fa-square-github text-4xl text-green-300   transition transform hover:scale-125 hover:text-green-500"
+                aria-hidden="true" title="github"></i>
+            </a>
+            <a href="mailto:ramarjun.varma@gmail.com" target="_blank">
+              <i class="fa fa-envelope text-4xl text-yellow-300 transition transform hover:scale-125 hover:text-yellow-500"
+                aria-hidden="true" title="mail me"></i>
+            </a>
+            <i class="fa fa-address-card text-4xl text-pink-300 transition transform hover:scale-125 hover:text-pink-500"
+              aria-hidden="true" title="portfolio"></i>
+          </div>
+
+          <div class="pt-8">
+            <p class="text-l text-gray-300 font-bold mb-4">Created with 
+              <i class="fa fa-heart text-xl pl-2 text-red-700 hover:text-blue-500" aria-hidden="true"></i></p>
+          </div>
+
+        </div>
+      </div>
+      <!-- Chat bot -->
+      <div class="chatbot-toggle bg-gradient-to-r from-purple-400 to-pink-600">
+        <i class="fa fa-comments text-xl text-blue-50" aria-hidden="true"></i>
+      </div>
+
+      <div class="chatbot-container">
+        <div class="chatbot-header bg-gray-800">
+          Interview Me
+        </div>
+        <div class="chatbot-body">
+          <div class="predefined-question cursor-pointer" data-answer="Hello! How can I assist you today?">Hello</div>
+          <div class="predefined-question cursor-pointer" data-answer="Click on the email icon.">Contact me</div>
+          <div class="predefined-question cursor-pointer"
+            data-answer="I am available after 7PM IST weekdays and 9AM to 7PM IST on weekends">When are you
+            free</div>
+          <div class="predefined-question cursor-pointer"
+            data-answer="Outsystems Reactive Web and Mobile development,SQL,Node JS, HTML, CSS, JS, React Js and various JS libraries">
+            What are your technical skills</div>
+          <div class="predefined-question cursor-pointer"
+            data-answer="Playing Video games, Exploring new technologies in market. Also love playing with electronic developement boards and robotics">
+            What are your hobbies</div>
+        </div>
+        <div class="chatbot-footer">
+          <div id="chatbot-answer" class="text-gray-700"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="JS/chatbot.js"></script>
+</body>
+
+</html>
