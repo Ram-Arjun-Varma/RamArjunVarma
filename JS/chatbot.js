@@ -8,4 +8,5 @@ document.querySelectorAll('.predefined-question').forEach(function (element) {
         const answer = this.getAttribute('data-answer');
         document.getElementById('chatbot-answer').innerText = answer;
     });
+    
 });
