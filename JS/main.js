@@ -6,7 +6,7 @@ window.onload = () => loadModel();
 
 function loadModel() {
     const loader = new GLTFLoader();
-    loader.load('./Assets/AnimatedModels/arjun.glb',
+    loader.load('/arjun.glb',
         (gltf) => {
             setupScene(gltf);
             document.getElementById('avatar-loading').style.display = 'none';
