@@ -1,6 +1,6 @@
 document.querySelector('.chatbot-toggle').addEventListener('click', function () {
     const chatbotContainer = document.querySelector('.chatbot-container');
-    chatbotContainer.style.display = chatbotContainer.style.display === 'flex' ? 'none' : 'flex';
+    chatbotContainer.style.display = chatbotContainer.style.display === 'block' ? 'none' : 'block';
 });
 
 document.querySelectorAll('.predefined-question').forEach(function (element) {

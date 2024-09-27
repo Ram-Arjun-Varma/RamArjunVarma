@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Projects">
+    <meta name="description"
+        content="Full-stack web developer skilled in creating responsive websites, 2D/3D games, and AI-powered apps. Passionate about exploring new tech and delivering innovative, user-centric solutions with modern tools like JavaScript, Tailwind CSS, and SQL. Always learning and upskilling in web, game, mobile, and AI development.">
+    <meta name="keywords"
+        content="web developer, full-stack developer, 2D game development, 3D game development, AI solutions, responsive websites, JavaScript, Tailwind CSS, SQL, mobile development, AI-powered apps, innovative web design, portfolio, game developer, creative developer, upskilling in tech, front-end developer, back-end developer, modern web development, database visualization, chatbot development">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Ram Arjun Varma">
+    <link href="main.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="icon" type="image/x-icon" href="/RAV.png">
+    <script type="module" src="JS/filter.js"></script>
+</head>
+
+<body class="flex flex-col items-center min-h-screen bg-gray-900">
+    <h1 class="text-4xl text-white font-bold mt-10 mb-5">My Work</h1>
+
+    <!-- Tags for filtering -->
+    <div class="mb-10 w-full px-4 flex justify-center">
+        <div class="flex space-x-4 overflow-x-auto whitespace-nowrap">
+            <button data-category="All"
+                class="filter-button bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-500 transition duration-300 m-1">All</button>
+            <button data-category="web"
+                class="filter-button bg-cyan-600 text-white px-6 py-2 rounded-full hover:bg-cyan-500 transition duration-300 m-1">Web</button>
+            <button data-category="mobile"
+                class="filter-button bg-red-600 text-white px-6 py-2 rounded-full hover:bg-red-500 transition duration-300 m-1">Mobile</button>
+            <button data-category="games"
+                class="filter-button bg-violet-600 text-white px-6 py-2 rounded-full hover:bg-violet-500 transition duration-300 m-1">Games</button>
+            <button data-category="ai"
+                class="filter-button bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-500 transition duration-300 m-1">AI
+                / ML</button>
+            <button data-category="misc"
+                class="filter-button bg-sky-600 text-white px-6 py-2 rounded-full hover:bg-sky-500 transition duration-300 m-1">Misc
+            </button>
+        </div>
+    </div>
+
+    <!-- Grid layout for cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 m-2 p-10">
+
+        <!-- Card 1 -->
+        <div class="project-card perspective-3d" data-category="web">
+            <div class="card relative p-6 bg-white rounded-lg shadow-lg">
+                <a href="https://ram-arjun-varma.github.io/RAVOnlineSQLEditor/" target="_blank">
+                    <h2 class="text-2xl text-blue-500 hover:text-blue-600 hover:underline font-semibold mb-4">
+                        RAV SQL Editor
+                    </h2>
+                </a>
+                <p class="text-gray-700 mb-6">
+                    A web-based SQL editor with real-time queries and syntax highlighting.
+                </p>
+                <!-- Button Section -->
+                <div class="flex space-x-4 z-10">
+                    <a href="https://github.com/Ram-Arjun-Varma/RAVOnlineSQLEditor" target="_blank">
+                        <i class="fa-solid fa-code text-2xl text-green-400 hover:text-green-500 z-10" aria-hidden="true"
+                            title="View Code"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card perspective-3d" data-category="web,games,ai">
+            <div class="card relative p-6 bg-white rounded-lg shadow-lg">
+                <a href="https://ram-arjun-varma.github.io/ListenRex/" target="_blank">
+                    <h2 class="text-2xl text-blue-500 hover:text-blue-600 hover:underline font-semibold mb-4">Listen Rex
+                    </h2>
+                </a>
+                <p class="text-gray-700 mb-6">
+                    A voice-controlled chrome offline dino jumping game using TensorFlow.js.
+                </p>
+                <!-- Button Section -->
+                <div class="flex space-x-4 z-10">
+                    <a href="https://github.com/Ram-Arjun-Varma/ListenRex" target="_blank">
+                        <i class="fa-solid fa-code text-2xl text-green-400 hover:text-green-500 z-10" aria-hidden="true"
+                            title="View Code"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card perspective-3d" data-category="web,ai">
+            <div class="card relative p-6 bg-white rounded-lg shadow-lg">
+                <a href="https://ram-arjun-varma.github.io/FingerArt/" target="_blank">
+                    <h2 class="text-2xl text-blue-500 hover:text-blue-600 hover:underline font-semibold mb-4">Finger Art
+                    </h2>
+                </a>
+                <p class="text-gray-700 mb-6">
+                    A finger drawing app using hand tracking for interactive art.
+                </p>
+                <!-- Button Section -->
+                <div class="flex space-x-4 z-10">
+                    <a href="https://github.com/Ram-Arjun-Varma/FingerArt" target="_blank">
+                        <i class="fa-solid fa-code text-2xl text-green-400 hover:text-green-500 z-10" aria-hidden="true"
+                            title="View Code"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-card perspective-3d" data-category="web">
+            <div class="card relative p-6 bg-white rounded-lg shadow-lg">
+                <a href="https://ram-arjun-varma.github.io/RAVColorPalletGenerator/" target="_blank">
+                    <h2 class="text-2xl text-blue-500 hover:text-blue-600 hover:underline font-semibold mb-4">RAV Color Palette
+                    </h2>
+                </a>
+                <p class="text-gray-700 mb-6">
+                    Design stunning color palettes effortlessly with lockable colors and quick copy.
+                </p>
+                <!-- Button Section -->
+                <div class="flex space-x-4 z-10">
+                    <a href="https://github.com/Ram-Arjun-Varma/RAVColorPalletGenerator" target="_blank">
+                        <i class="fa-solid fa-code text-2xl text-green-400 hover:text-green-500 z-10" aria-hidden="true"
+                            title="View Code"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
